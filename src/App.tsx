@@ -42,7 +42,7 @@ function App() {
       setLines(prevLines => {
         //TODO reduce first item by one in each line
         return prevLines.map(line => {
-          return[line[0] - 1, ...line.slice(1)]. filter((value)=> value > 0)
+          return[line[0] - 1, ...line.slice(1)].filter((value)=> value > 0)
         })
       })
     }, 1000)
